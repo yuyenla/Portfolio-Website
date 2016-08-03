@@ -361,20 +361,23 @@ section.thumb-wrap, section.work-wrap{
 }
 
 .thumb-container{
+	display:block;
 	max-width:960px;
 	margin: 0px auto;
 	overflow:hidden;
-	color:transparent;
+	background-color:yellow;
 	clear:both;
 	height:100%;
-	text-align:center;
-
+	display:flex;
+	justify-content: flex-start;
+	flex-flow: row wrap;
+	 align-items: center;
 }
 
 .thumb-unit{
-	display:inline-block;
-	width:25%;
-	margin-left:1.5em;
+	display:block;
+	width:24%;
+	float:left;
 	position:relative;
 	padding-top:0%;
 	overflow:hidden;
@@ -383,6 +386,9 @@ section.thumb-wrap, section.work-wrap{
 	background-repeat:no-repeat;
 	background-size:cover;
 	perspective:300px;
+	padding:3px 3px 3px 3px;
+	
+	
 
 }
 
@@ -420,7 +426,7 @@ section.thumb-wrap, section.work-wrap{
 }
 
 .thumb-container .thumb-unit:hover .thumb-overlay strong{
-	color:none;
+	color:white;
 	display:block;
 	font-size:20px;
 	font-family:helvetica;
@@ -580,55 +586,8 @@ section.thumb-wrap, section.work-wrap{
 
 	/*--------------header------------------*/
 	
-	header {
-		height:400px;
-	}
-
-	header h1#title {
-		font-size:4.3em;
-		padding-top:3em;
-
-	}
-
-	header p.blurb {
-		font-size:.8em;
-		padding-bottom:30px;
-	}
-
-	/*--------------nav---------------------*/
-
-	nav {
-		font-size:1em;
-		top:-26em;
-	}
-	
-	/*--------------about me-----------------*/
-	#aboutMe h1 {
-		font-size:1.5em;
-	
-	}
-
-	#aboutMe article section.aboutmeblurb img {
-		clear:both;
-		align:center;
-
-	}
-
-	#aboutMe article section.aboutmeblurb {
-		font-family:helvetica;
-		color:gray;
-		letter-spacing: 0.05em;
-		max-width:680px;
-		padding:10px 0 50px 15px;
-		clear:both;
-	}
-
-	#aboutMe article section.aboutmeblurb p
-	{
-		font-weight:300;
-		padding-left: 0px;
-		font-size:1em;
-
+	body {
+		font-size:1.2em;
 	}
 
 	/*--------------work section-----------------*/
@@ -643,12 +602,12 @@ section.thumb-wrap, section.work-wrap{
 
 	.thumb-container{
 		display:block;
+		max-width:480px;
 		clear:both;
-		
 	}
 
 	.thumb-unit{
-      width:25%;
+      width:50%;
     }
 
 	.thumb-container .thumb-unit:hover .thumb-overlay strong{
@@ -676,129 +635,16 @@ section.thumb-wrap, section.work-wrap{
 
 @media screen and (max-width: 625px) {
 
-	/*--------------header------------------*/
-	
-	header {
-		height:400px;
-		margin-bottom:0;
+	body {
+		font-size:1.3em;
 	}
-
-	header h1#title {
-		font-size:4em;
-		padding-top:2em;
-		padding-bottom:0.2em;
-		letter-spacing: 0.2em;
-	}
-
-	header p.blurb {
-		font-size:.8em;
-		padding-bottom:30px;
-	}
-
-	/*--------------nav---------------------*/
-
-	nav {
-		font-size:1.5em;
-		position:static;
-		padding:0;
-		margin:0;
-		float:none;
-	}
-
-	nav a {
-		display:block;
-		width:100%;
-		padding:4px 0 4px 0;
-		background-color:#99cccc;
-		text-indent: 3em;
-		font-style:italic;
-	}
-
-	nav a:hover {
-		color:white;
-	}
-
-	/*--------------footer--------------------*/
-
-	footer .lockup .content-wrap{
-		margin-left:5px;
-		margin-bottom:0px;
-		padding-top:20px;
-
-	}
-	footer .lockup .content-wrap a{
-		font-size:1em;
-	}
-
-
-	footer p.copyright{
-		margin:0 0 0 20px;
-		padding-bottom:0px;
-		color:white;
-		font-family:arial;
-		font-size:0.9em;
-	}
-
-
-
 }
 
 /*--------------------NEXUS 6P--------------------------*/
 @media screen and (max-width: 565px) {
 
-	/*--------------header------------------*/
-	
-	header {
-		height:300px;
-		margin-bottom:0;
-	}
-
-	header h1#title {
-		padding-top:2.5em;
-		font-size:2.8em;
-		text-align:center;
-		letter-spacing:0.1em;
-	}
-
-	header p.blurb {
-		margin-top:0px;
-		font-size:.8em;
-		margin-bottom:30px;
-	}
-
-	/*--------------nav---------------------*/
-
-	nav {
-		font-size:1.3em;
-		position:static;
-		padding-top:0px;
-		margin:0px 0px 10px 0px;
-	}
-
-	nav a {
-		padding:4px 0 4px 0;
-		display:block;
-		text-indent: 2em;
-	}
-
-	
-	/*--------------about me-----------------*/
-	#aboutMe h1 {
-		font-size:1.4em;
-		letter-spacing: 0.1em;
-	
-	}
-
-	#aboutMe article section.aboutmeblurb {
-		max-width:600px;
-		margin:0px auto;
-	}
-
-	#aboutMe article section.aboutmeblurb p{
-		font-size:1em;
-		text-align:left;
-		font-weight:300;
-		margin-right:20px;
+	body {
+		font-size: 1.4em;
 	}
 
 	/*--------------work section-----------------*/
@@ -866,55 +712,8 @@ section.thumb-wrap, section.work-wrap{
 /*------------------IPHONE 6  & NEXUS 5X---------------------------*/
 @media screen and (max-width: 425px) {
 
-	/*--------------header------------------*/
-
-	header h1#title {
-		font-size:3em;
-		padding-top:2em;
-		letter-spacing:0em;
-		margin-left:none;
-		padding-left:none;
-		clear:both;
-	}
-
-	header p.blurb {
-		margin-top:0px;
-		font-size:1em;
-		margin-bottom:30px;
-		display:none;
-	}
-
-	/*--------------nav---------------------*/
-
-	nav {
-		font-size:1.3em;
-	}
-
-	nav a {
-		text-indent: 2em;
-		padding:4px 0 4px 0;
-	}
-
-
-	/*--------------about me-----------------*/
-	#aboutMe h1 {
-		text-align:center;
-		font-size:1.3em;
-	
-	}
-
-	#aboutMe article section.aboutmeblurb {
-		max-width:400px;
-		margin:0px auto;
-	}
-
-	#aboutMe article section.aboutmeblurb p{
-		font-size:1em;
-		text-align:left;
-		font-weight:300;
-		margin-left:0;
-		padding-left: 0px;
-		margin-right:20px;
+	body {
+		font-size: 1.4em;
 	}
 
 	/*--------------work section-----------------*/
@@ -936,8 +735,6 @@ section.thumb-wrap, section.work-wrap{
 
 	.thumb-unit{
       width:100%;
-      padding:0;
-      margin:0;
     }
 
 	.work-container .work-return {
@@ -974,57 +771,10 @@ section.thumb-wrap, section.work-wrap{
 /*-----------------------------IPHONE 5------------------------*/
 @media screen and (max-width: 320px) {
 
-	/*--------------header------------------*/
-
-	header h1#title {
-		text-align:none;
-		padding-top:4em;
-		letter-spacing:0em;
-		margin-left:none;
-		padding-left:none;
-		clear:both;
-		font-size: 2em;
+	body {
+		font-size: 1.4em;
 	}
 
-	header p.blurb {
-		margin-top:0px;
-		font-size:0.85em;
-		margin-bottom:30px;
-	}
-
-	/*--------------nav---------------------*/
-
-	nav {
-		font-size:1em;
-		width:320px;
-	}
-
-	nav a {
-		text-indent: 1em;
-		width:100%;
-	}
-
-
-	/*--------------about me-----------------*/
-	#aboutMe h1 {
-		text-align:center;
-		font-size:1.3em;
-	
-	}
-
-	#aboutMe article section.aboutmeblurb {
-		width:300px;
-		margin:0px auto;
-	}
-
-	#aboutMe article section.aboutmeblurb p{
-		font-size:1em;
-		text-align:left;
-		font-weight:300;
-		margin-left:0;
-		padding-left: 0px;
-		margin-right:0px;
-	}
 
 	/*--------------work section-----------------*/
 
@@ -1040,8 +790,6 @@ section.thumb-wrap, section.work-wrap{
 
 	.thumb-unit{
       width:100%;
-       padding:0;
-      margin:0;
     }
 
 	.work-container .work-return {
